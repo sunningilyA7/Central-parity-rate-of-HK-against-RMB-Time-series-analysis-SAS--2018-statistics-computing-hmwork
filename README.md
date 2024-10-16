@@ -116,7 +116,7 @@ At this point, we observe that the skewness of this time series is still greater
 Using SAS software, we generated the time series plot for the HKD to CNY midpoint exchange rate with the new data, as shown below:
 
 **Figure 3: Time Series Plot of HKD to CNY Midpoint Exchange Rate (New Data)**
-![](./Figure3.png)
+![](./Figure2.png)
 
 We found that the trend in the new data is much smoother and closer to a normal distribution.
 
@@ -164,6 +164,21 @@ Based on SAS software, we identified the best model for the time series:
 | 6     | 5.82       | 6    | 0.4436          | -0.027          |
 | 12    | 10.41      | 12   | 0.5804          | -0.005          |
 | 18    | 17.92      | 18   | 0.4611          | -0.000          |
+
+### Minimum Information Criterion
+
+| Lag  | MA 0      | MA 1      | MA 2      | MA 3      | MA 4      | MA 5      | MA 6      |
+|------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| AR 0 | -3.42345  | -3.41533  | -3.40577  | -3.39727  | -3.39358  | -3.38553  | -3.37624  |
+| AR 1 | -3.41523  | -3.40564  | -3.39601  | -3.38757  | -3.38386  | -3.37572  | -3.36641  |
+| AR 2 | -3.40562  | -3.39595  | -3.38650  | -3.37842  | -3.37550  | -3.36744  | -3.35801  |
+| AR 3 | -3.39690  | -3.38730  | -3.37816  | -3.36922  | -3.36566  | -3.35763  | -3.34817  |
+| AR 4 | -3.39433  | -3.38454  | -3.37627  | -3.36650  | -3.35789  | -3.34983  | -3.34040  |
+| AR 5 | -3.38628  | -3.37651  | -3.36811  | -3.35831  | -3.34981  | -3.34089  | -3.33155  |
+| AR 6 | -3.37704  | -3.36726  | -3.35869  | -3.34887  | -3.34036  | -3.33151  | -3.32195  |
+
+**Error Sequence Model:** AR(8)  
+**Minimum BIC Value:** BIC(0,0) = -3.42345
 
 The minimum information criterion and corresponding model is **AR(8)**.
 
