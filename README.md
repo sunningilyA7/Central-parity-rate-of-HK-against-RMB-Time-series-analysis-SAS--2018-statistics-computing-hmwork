@@ -21,7 +21,7 @@ This article first analyzes the data of Hong Kong dollar against Chinese yuan th
 We can observe that among the 1218 data points, the minimum value is around 78.5, and the maximum value is around 89.63. The minimum value represents the moment when the Hong Kong Dollar (HKD) had the highest value compared to the same amount of Renminbi (CNY), while the maximum value represents the time when the Hong Kong Dollar had the lowest value.
 
 Next, we will look at the distribution of the HKD to CNY midpoint exchange rate through Figure 1:
-![](./F1.png)
+![](./Figure1.png)
 
 We found that, over five years, the HKDCNY value of 79.2 occurred the most frequently, followed by 79.8 and 78.6.
 
@@ -88,7 +88,7 @@ The concept of **kurtosis**: Kurtosis is a measure used to reflect the sharpness
 Starting from May 2, 2013, we used SAS software to generate the time series plot (here, missing values are not considered), as shown below:
 
 **Figure 2: Time Series Plot of HKD to CNY Midpoint Exchange Rate**
-![](./Figure2.png)
+![](./F1.png)
 
 At this point, we found that this plot does not match the skewness and kurtosis from the previous basic data analysis. The long tail from the previous analysis should be on the right side, but here it appears to be on the left.
 
