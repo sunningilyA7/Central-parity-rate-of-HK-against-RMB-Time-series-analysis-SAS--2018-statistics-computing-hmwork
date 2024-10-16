@@ -21,7 +21,7 @@ This article first analyzes the data of Hong Kong dollar against Chinese yuan th
 We can observe that among the 1218 data points, the minimum value is around 78.5, and the maximum value is around 89.63. The minimum value represents the moment when the Hong Kong Dollar (HKD) had the highest value compared to the same amount of Renminbi (CNY), while the maximum value represents the time when the Hong Kong Dollar had the lowest value.
 
 Next, we will look at the distribution of the HKD to CNY midpoint exchange rate through Figure 1:
-![](./Figure1.png)
+![](./F1.png)
 
 We found that, over five years, the HKDCNY value of 79.2 occurred the most frequently, followed by 79.8 and 78.6.
 
@@ -187,8 +187,9 @@ The minimum information criterion and corresponding model is **AR(8)**.
 Using SAS software, we fitted the model and obtained the following data:
 
 **Figure 4: Residual Autocorrelation Diagnostic for First-order Differencing**
-![](./Picture2.png)
 ![](./Picture3.png)
+![](./Picture4.png)
+
 
 
 The model passed the white noise test, indicating that the fit is sufficient, and the standard error of residuals is similar to the previous estimate. Therefore, this result is what we expected.
@@ -198,7 +199,7 @@ The model passed the white noise test, indicating that the fit is sufficient, an
 Based on SAS software, we obtained the forecasting results, as shown below:
 
 **Table 6: Forecast of HKD to CNY Midpoint Exchange Rate**
-![](./Picture4.png)
+![](./Picture5.png)
 
 | Observation | Forecast  | Standard Error | 95% Confidence Interval |
 |-------------|-----------|----------------|-------------------------|
