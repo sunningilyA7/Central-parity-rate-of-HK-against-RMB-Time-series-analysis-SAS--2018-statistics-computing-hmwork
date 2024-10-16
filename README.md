@@ -53,13 +53,13 @@ Using SAS software, we obtained the exploratory descriptive statistics of the HK
 #### Position Test: Mu0 = 0
 | Test    | Statistic | p-value |
 |---------|-----------|---------|
-| Student t | 834.8854  | Pr > |t| < .0001 |
-| Sign M | 609        | Pr >= |M| < .0001 |
+| Student t | 834.8854  | Pr > &|t| & < .0001 |
+| Sign M | 609        | Pr >= &|M|& < .0001 |
 
 #### Signed-Rank Test: Mu0 = 0
 | Test    | Statistic  | p-value |
 |---------|------------|---------|
-| Signed-Rank S | 371185.5 | Pr >= |S| < .0001 |
+| Signed-Rank S | 371185.5 | Pr >=& |S|& < .0001 |
 
 #### Extreme Observations
 | Minimum Value | Observation | Maximum Value | Observation |
