@@ -88,6 +88,7 @@ The concept of **kurtosis**: Kurtosis is a measure used to reflect the sharpness
 Starting from May 2, 2013, we used SAS software to generate the time series plot (here, missing values are not considered), as shown below:
 
 **Figure 2: Time Series Plot of HKD to CNY Midpoint Exchange Rate**
+![](./Figure2.png)
 
 At this point, we found that this plot does not match the skewness and kurtosis from the previous basic data analysis. The long tail from the previous analysis should be on the right side, but here it appears to be on the left.
 
@@ -115,6 +116,7 @@ At this point, we observe that the skewness of this time series is still greater
 Using SAS software, we generated the time series plot for the HKD to CNY midpoint exchange rate with the new data, as shown below:
 
 **Figure 3: Time Series Plot of HKD to CNY Midpoint Exchange Rate (New Data)**
+![](./Figure3.png)
 
 We found that the trend in the new data is much smoother and closer to a normal distribution.
 
@@ -137,6 +139,7 @@ Using SAS software, we performed a stationarity test on the HKD to CNY midpoint 
 | 18    | 9999.99    | 18   | < .0001         | 0.920           |
 | 24    | 9999.99    | 24   | < .0001         | 0.876           |
 
+![](./Picture1.png)
 We observed that the autocorrelation of the sample has a slow decreasing trend, so we performed first-order differencing, as shown in the table below:
 
 **Table 5: ARIMA Process (First-order Differencing)**
@@ -145,6 +148,8 @@ We observed that the autocorrelation of the sample has a slow decreasing trend, 
 |-------|------------|------|-----------------|-----------------|
 | 6     | 5.82       | 6    | 0.4436          | -0.027          |
 | 12    | 10.41      | 12   | 0.5804          | -0.005          |
+![](./Picture2.png)
+
 
 After the first-order differencing, we can consider this time series to be stationary.
 
@@ -167,6 +172,9 @@ The minimum information criterion and corresponding model is **AR(8)**.
 Using SAS software, we fitted the model and obtained the following data:
 
 **Figure 4: Residual Autocorrelation Diagnostic for First-order Differencing**
+![](./Picture2.png)
+![](./Picture3.png)
+
 
 The model passed the white noise test, indicating that the fit is sufficient, and the standard error of residuals is similar to the previous estimate. Therefore, this result is what we expected.
 
@@ -175,11 +183,13 @@ The model passed the white noise test, indicating that the fit is sufficient, an
 Based on SAS software, we obtained the forecasting results, as shown below:
 
 **Table 6: Forecast of HKD to CNY Midpoint Exchange Rate**
+![](./Picture4.png)
 
 | Observation | Forecast  | Standard Error | 95% Confidence Interval |
 |-------------|-----------|----------------|-------------------------|
 | 661         | 81.6140   | 0.1816         | 81.2581 to 81.9698       |
 | 662         | 81.6374   | 0.2530         | 81.1415 to 82.1333       |
+
 
 We can therefore obtain the range of future trends for the HKD to CNY exchange rate. Based on the trend line, we can predict the future trajectory of the Hong Kong Dollar, and the trend at the end of May 2018 is upward.
 
