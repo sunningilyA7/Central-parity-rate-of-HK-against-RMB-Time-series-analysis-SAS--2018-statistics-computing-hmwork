@@ -69,3 +69,14 @@ Using SAS software, we obtained the exploratory descriptive statistics of the HK
 | 78.601        | 1047        | 89.583        | 323         |
 | 78.620        | 1036        | 89.586        | 321         |
 | 78.623        | 1055        | 89.638        | 320         |
+
+
+Since the analysis here focuses mainly on time series data, **skewness** and **kurtosis** are usually good measures for evaluating time series data. 
+
+**Skewness** is a statistic that describes the degree of asymmetry in a distribution. It is used to measure symmetry in a time series. If the skewness is negative, the left side of the mean has more spread than the right side. If the skewness is positive, the left side of the mean has less spread than the right side. For a **normal distribution** (or strictly symmetrical distribution), skewness equals 0. Skewness is the **standardized 3rd central moment** of the distribution (for a normal distribution, skewness = 0). If skewness > 0, it indicates a **right-tailed distribution**, and if skewness < 0, it indicates a **left-tailed distribution**. 
+
+When the skewness is greater than 0, the distribution is **right-skewed** with a heavier tail on the right. In stock markets, **A-shares** (stock indices) tend to be **left-skewed**, while individual stocks are more often right-skewed. In the stock market, stocks with right-skewed returns are often attractive to speculators, as there is a chance of achieving large returns, i.e., "small bets for big gains." Therefore, it is advised to avoid these stocks.
+
+### Kurtosis
+The concept of **kurtosis**: Kurtosis is a measure used to reflect the sharpness or flatness of the peak of a frequency distribution curve. Sometimes, two data sets can have the same arithmetic mean, standard deviation, and skewness but differ in the sharpness of their distribution peaks. Here, the kurtosis is less than 0. The closer the kurtosis is to 0, the more the distribution resembles a **normal distribution**. The further from 0 it is, the less the data resembles a normal distribution. If the kurtosis is negative, it indicates that the data is more concentrated, with fewer data points on either side. If it's positive, the opposite is true.
+
