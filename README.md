@@ -21,5 +21,5 @@ This article first analyzes the data of Hong Kong dollar against Chinese yuan th
 We can observe that among the 1218 data points, the minimum value is around 78.5, and the maximum value is around 89.63. The minimum value represents the moment when the Hong Kong Dollar (HKD) had the highest value compared to the same amount of Renminbi (CNY), while the maximum value represents the time when the Hong Kong Dollar had the lowest value.
 
 Next, we will look at the distribution of the HKD to CNY midpoint exchange rate through Figure 1:
-!(Figure1.png)
+!(./Figure1.png)
 
