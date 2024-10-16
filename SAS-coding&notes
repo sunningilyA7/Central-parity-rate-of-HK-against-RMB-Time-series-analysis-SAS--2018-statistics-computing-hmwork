@@ -1,0 +1,395 @@
+1 OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+70 
+71 PROC IMPORT OUT=hk11 
+DATAFILE="/home/sunningily0/hk11.txt" DBMS=TAB REPLACE;
+72 GETNAMES=YES;
+73 DATAROW=2;
+74 RUN;
+NOTE: Unable to open parameter catalog: SASUSER.PARMS.PARMS.SLIST 
+in update mode. Temporary parameter values will be saved to 
+WORK.PARMS.PARMS.SLIST.
+75 
+/*************************************************************
+*********
+76 * PRODUCT: SAS
+77 * VERSION: 9.4
+78 * CREATOR: External File Interface
+79 * DATE: 02JUL18
+80 * DESC: Generated SAS Datastep Code
+81 * TEMPLATE SOURCE: (None Specified.)
+82 
+**************************************************************
+*********/
+83 data WORK.HK11 ;
+84 %let _EFIERR_ = 0; /* set the ERROR detection macro 
+variable */
+85 infile '/home/sunningily0/hk11.txt' 
+delimiter='09'x MISSOVER DSD lrecl=32767 firstobs=2 ;
+86 informat date yymmdd10. ;
+87 informat HK best32. ;
+88 format date yymmdd10. ;
+89 format HK best12. ;
+90 input
+91 date
+92 HK
+93 ;
+94 if _ERROR_ then call symputx('_EFIERR_',1); /* set 
+ERROR detection macro variable */
+95 run;
+NOTE: INFILE '/home/sunningily0/hk11.txt' 是:
+ 文件名=/home/sunningily0/hk11.txt,
+ 所有者名=sunningily0,组名称=oda,
+ 访问权限=-rw-r--r--,
+ 上次修改时间=2018 年 05 月 21 日 22 时 20 分 51 秒,
+ 文件大小（字节）=23002
+NOTE: 1218 records were read from the infile 
+'/home/sunningily0/hk11.txt'.
+ 最小记录长度是 15。
+ 最大记录长度是 17。
+NOTE: 数据集 WORK.HK11 有 1218 个观测和 2 个变量。
+NOTE: “DATA 语句”所用时间（总处理时间）:
+ 实际时间 0.00 秒
+ 用户 CPU 时间 0.00 秒
+ 系统 CPU 时间 0.00 秒
+ 内存 9574.65k
+ OS 内存 48952.00k
+ 时间戳 2018-07-02 上午 11:38:47
+ Step Count 235 Switch Count 2
+ 页错误数 0
+ 页回收数 88
+ 页交换数 0
+ 主动上下文切换数 13
+ 被动上下文切换数 0
+ 块输入操作数 0
+ 块输出操作数 264
+ 
+1218 rows created in WORK.HK11 from /home/sunningily0/hk11.txt.
+ 
+ 
+ 
+NOTE: 成功创建“WORK.HK11”数据集。
+NOTE: 数据集 WORK.HK11 有 1218 个观测和 2 个变量。
+NOTE: “PROCEDURE IMPORT”所用时间（总处理时间）:
+ 实际时间 0.05 秒
+ 用户 CPU 时间 0.04 秒
+ 系统 CPU 时间 0.01 秒
+ 内存 9574.65k
+ OS 内存 49212.00k
+ 时间戳 2018-07-02 上午 11:38:47
+ Step Count 235 Switch Count 10
+ 页错误数 0
+ 页回收数 1917
+ 页交换数 0
+ 主动上下文切换数 77
+ 被动上下文切换数 0
+ 块输入操作数 0
+ 块输出操作数 312
+ 
+96 
+97 PROC IMPORT OUT=hk111 
+DATAFILE="/home/sunningily0/hk111.txt" DBMS=TAB REPLACE;
+98 GETNAMES=YES;
+99 DATAROW=2;
+100 RUN;
+NOTE: Unable to open parameter catalog: SASUSER.PARMS.PARMS.SLIST 
+in update mode. Temporary parameter values will be saved to 
+WORK.PARMS.PARMS.SLIST.
+101 
+/*************************************************************
+*********
+102 * PRODUCT: SAS
+103 * VERSION: 9.4
+104 * CREATOR: External File Interface
+105 * DATE: 02JUL18
+106 * DESC: Generated SAS Datastep Code
+107 * TEMPLATE SOURCE: (None Specified.)
+108 
+**************************************************************
+*********/
+109 data WORK.HK111 ;
+110 %let _EFIERR_ = 0; /* set the ERROR detection macro 
+variable */
+111 infile '/home/sunningily0/hk111.txt' 
+delimiter='09'x MISSOVER DSD lrecl=32767 firstobs=2 ;
+112 informat date yymmdd10. ;
+113 informat HKK best32. ;
+114 format date yymmdd10. ;
+115 format HKK best12. ;
+116 input
+117 date
+118 HKK
+119 ;
+120 if _ERROR_ then call symputx('_EFIERR_',1); /* set 
+ERROR detection macro variable */
+121 run;
+NOTE: INFILE '/home/sunningily0/hk111.txt' 是:
+ 文件名=/home/sunningily0/hk111.txt,
+ 所有者名=sunningily0,组名称=oda,
+ 访问权限=-rw-r--r--,
+ 上次修改时间=2018 年 07 月 02 日 18 时 45 分 47 秒,
+ 文件大小（字节）=12462
+NOTE: 660 records were read from the infile 
+'/home/sunningily0/hk111.txt'.
+ 最小记录长度是 15。
+ 最大记录长度是 17。
+NOTE: 数据集 WORK.HK111 有 660 个观测和 2 个变量。
+NOTE: “DATA 语句”所用时间（总处理时间）:
+ 实际时间 0.00 秒
+ 用户 CPU 时间 0.01 秒
+ 系统 CPU 时间 0.00 秒
+ 内存 9676.96k
+ OS 内存 48952.00k
+ 时间戳 2018-07-02 上午 11:38:47
+ Step Count 236 Switch Count 2
+ 页错误数 0
+ 页回收数 90
+ 页交换数 0
+ 主动上下文切换数 11
+ 被动上下文切换数 0
+ 块输入操作数 0
+ 块输出操作数 264
+ 
+660 rows created in WORK.HK111 from /home/sunningily0/hk111.txt.
+ 
+ 
+ 
+NOTE: 成功创建“WORK.HK111”数据集。
+NOTE: 数据集 WORK.HK111 有 660 个观测和 2 个变量。
+NOTE: “PROCEDURE IMPORT”所用时间（总处理时间）:
+ 实际时间 0.04 秒
+ 用户 CPU 时间 0.04 秒
+ 系统 CPU 时间 0.00 秒
+ 内存 9676.96k
+ OS 内存 49212.00k
+ 时间戳 2018-07-02 上午 11:38:47
+ Step Count 236 Switch Count 10
+ 页错误数 0
+ 页回收数 1921
+ 页交换数 0
+ 主动上下文切换数 74
+ 被动上下文切换数 0
+ 块输入操作数 0
+ 块输出操作数 280
+ 
+122 
+123 proc means data=hk11;
+124 var hk;
+125 title1 '港币兑换人民币中间价均值';
+126 run;
+NOTE: 从数据集 WORK.HK11. 读取了 1218 个观测
+NOTE: “PROCEDURE MEANS”所用时间（总处理时间）:
+ 实际时间 0.02 秒
+ 用户 CPU 时间 0.02 秒
+ 系统 CPU 时间 0.01 秒
+ 内存 9454.75k
+ OS 内存 51176.00k
+ 时间戳 2018-07-02 上午 11:38:47
+ Step Count 237 Switch Count 2
+ 页错误数 0
+ 页回收数 1619
+ 页交换数 0
+ 主动上下文切换数 24
+ 被动上下文切换数 0
+ 块输入操作数 0
+ 块输出操作数 8
+ 
+127 
+128 proc chart data=hk11;
+129 vbar hk;
+130 title1 'VBAR 图';
+131 run;
+NOTE: “PROCEDURE CHART”所用时间（总处理时间）:
+ 实际时间 0.01 秒
+ 用户 CPU 时间 0.02 秒
+ 系统 CPU 时间 0.00 秒
+ 内存 1634.93k
+ OS 内存 44996.00k
+ 时间戳 2018-07-02 上午 11:38:47
+ Step Count 238 Switch Count 1
+ 页错误数 0
+ 页回收数 51
+ 页交换数 0
+ 主动上下文切换数 8
+ 被动上下文切换数 0
+ 块输入操作数 0
+ 块输出操作数 16
+ 
+132 
+133 proc univariate data=hk11;
+134 var hk;
+135 title1 '关于港币兑换人民币中间价探索性数据';
+136 run;
+NOTE: “PROCEDURE UNIVARIATE”所用时间（总处理时间）:
+ 实际时间 0.05 秒
+ 用户 CPU 时间 0.05 秒
+ 系统 CPU 时间 0.01 秒
+ 内存 1191.62k
+ OS 内存 44996.00k
+ 时间戳 2018-07-02 上午 11:38:47
+ Step Count 239 Switch Count 1
+ 页错误数 0
+ 页回收数 54
+ 页交换数 0
+ 主动上下文切换数 8
+ 被动上下文切换数 0
+ 块输入操作数 0
+ 块输出操作数 8
+ 
+137 
+138 proc gplot data=hk11;
+139 plot hk*date;
+140 symbol v=diamond i=join c=blue;
+141 title1 '关于港币兑换人民币中间价时间序列图';
+142 run;
+143 
+NOTE: 从数据集 WORK.HK11. 读取了 1218 个观测
+NOTE: “PROCEDURE GPLOT”所用时间（总处理时间）:
+ 实际时间 0.19 秒
+ 用户 CPU 时间 0.18 秒
+ 系统 CPU 时间 0.01 秒
+ 内存 8606.09k
+ OS 内存 47668.00k
+ 时间戳 2018-07-02 上午 11:38:47
+ Step Count 240 Switch Count 2
+ 页错误数 0
+ 页回收数 662
+ 页交换数 0
+ 主动上下文切换数 17
+ 被动上下文切换数 0
+ 块输入操作数 0
+ 块输出操作数 504
+ 
+144 proc univariate data=hk111;
+145 var hkK;
+146 title1 '关于港币兑换人民币中间价探索性 new 数据';
+147 run;
+NOTE: “PROCEDURE UNIVARIATE”所用时间（总处理时间）:
+ 实际时间 0.06 秒
+ 用户 CPU 时间 0.07 秒
+ 系统 CPU 时间 0.00 秒
+ 内存 1072.59k
+ OS 内存 45508.00k
+ 时间戳 2018-07-02 上午 11:38:47
+ Step Count 241 Switch Count 1
+ 页错误数 0
+ 页回收数 54
+ 页交换数 0
+ 主动上下文切换数 8
+ 被动上下文切换数 1
+ 块输入操作数 0
+ 块输出操作数 64
+ 
+148 
+149 proc gplot data=hk111;
+150 plot hkK*date;
+151 symbol v=diamond i=join c=blue;
+152 title1 '关于港币兑换人民币中间价 new 时间序列图';
+153 run;
+154 
+NOTE: 从数据集 WORK.HK111. 读取了 660 个观测
+NOTE: “PROCEDURE GPLOT”所用时间（总处理时间）:
+ 实际时间 0.18 秒
+ 用户 CPU 时间 0.16 秒
+ 系统 CPU 时间 0.02 秒
+ 内存 7449.50k
+ OS 内存 48436.00k
+ 时间戳 2018-07-02 上午 11:38:47
+ Step Count 242 Switch Count 2
+ 页错误数 0
+ 页回收数 773
+ 页交换数 0
+ 主动上下文切换数 18
+ 被动上下文切换数 2
+ 块输入操作数 0
+ 块输出操作数 416
+ 
+155 proc arima data=hk111;
+156 identify var=hkk;
+157 run;
+158 
+NOTE: “PROCEDURE ARIMA”所用时间（总处理时间）:
+ 实际时间 0.25 秒
+ 用户 CPU 时间 0.12 秒
+ 系统 CPU 时间 0.01 秒
+ 内存 14249.40k
+ OS 内存 53704.00k
+ 时间戳 2018-07-02 上午 11:38:48
+ Step Count 243 Switch Count 0
+ 页错误数 0
+ 页回收数 2240
+ 页交换数 0
+ 主动上下文切换数 326
+ 被动上下文切换数 0
+ 块输入操作数 0
+ 块输出操作数 1056
+ 
+159 proc arima data=hk111;
+160 identify var=hkk(1) nlag=12;
+161 run;
+162 
+NOTE: “PROCEDURE ARIMA”所用时间（总处理时间）:
+ 实际时间 0.23 秒
+ 用户 CPU 时间 0.11 秒
+ 系统 CPU 时间 0.01 秒
+ 内存 3240.28k
+ OS 内存 54348.00k
+ 时间戳 2018-07-02 上午 11:38:48
+ Step Count 244 Switch Count 0
+ 页错误数 0
+ 页回收数 562
+ 页交换数 0
+ 主动上下文切换数 311
+ 被动上下文切换数 0
+ 块输入操作数 0
+ 块输出操作数 752
+ 
+163 proc arima data=hk111;
+164 identify var=hkk(1) minic p=(0:6) q=(0:6);
+165 run;
+166 
+NOTE: “PROCEDURE ARIMA”所用时间（总处理时间）:
+ 实际时间 0.25 秒
+ 用户 CPU 时间 0.14 秒
+ 系统 CPU 时间 0.00 秒
+ 内存 3207.81k
+ OS 内存 54604.00k
+ 时间戳 2018-07-02 上午 11:38:48
+ Step Count 245 Switch Count 0
+ 页错误数 0
+ 页回收数 430
+ 页交换数 0
+ 主动上下文切换数 311
+ 被动上下文切换数 1
+ 块输入操作数 0
+ 块输出操作数 792
+ 
+167 proc arima data=hk111;
+168 identify var=hkk(1);
+169 estimate p=8 method=ml;
+170 run;
+171 
+NOTE: “PROCEDURE ARIMA”所用时间（总处理时间）:
+ 实际时间 0.63 秒
+ 用户 CPU 时间 0.34 秒
+ 系统 CPU 时间 0.03 秒
+ 内存 9957.59k
+ OS 内存 61164.00k
+ 时间戳 2018-07-02 上午 11:38:49
+ Step Count 246 Switch Count 12
+ 页错误数 0
+ 页回收数 7518
+ 页交换数 0
+ 主动上下文切换数 916
+ 被动上下文切换数 1
+ 块输入操作数 0
+ 块输出操作数 2208
+ 
+172 proc arima data=hk111;
+173 identify var=hkk(1);
+174 estimate p=8 method=ml;
+175 forecast lead=5 id=date out=hk111;
+176 run;
+177 
+178 
+179 
+180 OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
