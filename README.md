@@ -23,3 +23,49 @@ We can observe that among the 1218 data points, the minimum value is around 78.5
 Next, we will look at the distribution of the HKD to CNY midpoint exchange rate through Figure 1:
 ![](./Figure1.png)
 
+We found that, over five years, the HKDCNY value of 79.2 occurred the most frequently, followed by 79.8 and 78.6.
+
+## 2. Exploratory Descriptive Statistics
+Using SAS software, we obtained the exploratory descriptive statistics of the HKDCNY midpoint exchange rate over the given time period, as shown below:
+
+### Table 2: Exploratory Data on HKD to CNY Midpoint Exchange Rate
+
+| Metric | Value | Metric | Value |
+|--------|-------|--------|-------|
+| Count            | 1218        | Weighted Sum     | 1218       |
+| Mean             | 82.3443358  | Total Observations | 100295.401 |
+| Standard Deviation | 3.4421556 | Variance         | 11.8484352 |
+| Skewness         | 0.58840951  | Kurtosis         | -1.064352  |
+| Uncorrected SS   | 8273177.72  | Corrected SS     | 14419.5456 |
+| Coefficient of Variation | 4.18019718 | Standard Error of Mean | 0.09862951 |
+
+#### Basic Statistical Measures
+| Position | Variability |
+|----------|-------------|
+| Mean     | 82.34434    |
+| Standard Deviation | 3.44216 |
+| Median   | 80.96250    |
+| Variance | 11.84844    |
+| Mode     | 79.56200    |
+| Range    | 11.06300    |
+| Interquartile Range | 5.65100 |
+
+#### Position Test: Mu0 = 0
+| Test    | Statistic | p-value |
+|---------|-----------|---------|
+| Student t | 834.8854  | Pr > |t| < .0001 |
+| Sign M | 609        | Pr >= |M| < .0001 |
+
+#### Signed-Rank Test: Mu0 = 0
+| Test    | Statistic  | p-value |
+|---------|------------|---------|
+| Signed-Rank S | 371185.5 | Pr >= |S| < .0001 |
+
+#### Extreme Observations
+| Minimum Value | Observation | Maximum Value | Observation |
+|---------------|-------------|---------------|-------------|
+| 78.575        | 1046        | 89.560        | 324         |
+| 78.594        | 1037        | 89.577        | 332         |
+| 78.601        | 1047        | 89.583        | 323         |
+| 78.620        | 1036        | 89.586        | 321         |
+| 78.623        | 1055        | 89.638        | 320         |
